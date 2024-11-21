@@ -148,3 +148,4 @@ E:\BACKUP\Desktop\MIHIKA\Library-Management-System\LibraryManagementSystemBacken
 E:\BACKUP\Desktop\MIHIKA\Library-Management-System\LibraryManagementSystemBackend\obj\Debug\net9.0\ref\LibraryManagementSystemBackend.dll
 E:\BACKUP\Desktop\MIHIKA\Library-Management-System\LibraryManagementSystemBackend\bin\Debug\net9.0\LibraryManagementSystemBackend.staticwebassets.runtime.json
 E:\BACKUP\Desktop\MIHIKA\Library-Management-System\LibraryManagementSystemBackend\bin\Debug\net9.0\BCrypt.Net-Next.dll
+E:\BACKUP\Desktop\MIHIKA\Library-Management-System\LibraryManagementSystemBackend\obj\Debug\net9.0\LibraryManagementSystemBackend.sourcelink.json
