@@ -1,0 +1,249 @@
+/* General Container */
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+    width: 250px;
+    background-color: #f8f4f0;
+    padding: 20px;
+    border-right: 1px solid #d6a675;
+  }
+  
+  .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .dashboard-nav-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set text color to black */
+    font-weight: normal; /* Optional: Ensure normal weight */
+  }
+  
+  .dashboard-nav-link:hover {
+    text-decoration: none; /* Keep underline removed on hover */
+    color: white; /* Optional: Slightly darker shade on hover */
+    
+  }
+  
+  
+  .dashboard-nav-section h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-nav-item {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-nav-item.active {
+        color: #262524;
+        font-weight: bold;
+        padding: 8px;
+        border-radius: 13px;
+        background-color: #d6a675;
+  }
+  
+  .dashboard-nav-item:hover {
+    background-color: #d6a675;
+    color: white;
+    padding: 4px;
+    border-radius: 13px;
+  }
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6a675;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-info {
+    font-size: 14px;
+}
+
+/* Form Container */
+.form-container {
+    padding: 20px;
+    background-color: #f9f1e7;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #d6a675;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+.book-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 98%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.reset-btn, .add-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.reset-btn {
+    background-color: white;
+    border: 1px solid #d6a675;
+    color: #d6a675;
+}
+
+.reset-btn:hover {
+    background-color: #f8e4d4;
+}
+
+.add-btn {
+    background-color: #d6a675;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #bf8b56;
+}
+
+/* Apply blur only to the container when modal is active */
+.blurred {
+    filter: blur(5px); /* Blur effect */
+    pointer-events: none; /* Prevent interaction with blurred elements */
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the modal is on top */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1100; /* Ensure modal content is above everything */
+}
+
+.success-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6a675;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #bf8b56;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+ /* Logout Button */
+ .logout-btn {
+    background-color: #d6a675;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #bf8b56;
+  }

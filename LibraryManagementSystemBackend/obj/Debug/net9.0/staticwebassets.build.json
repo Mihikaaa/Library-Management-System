@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "D4lLKaYkakVtfPluAdYbEGN5rAjDttXY/tIoyHDt2kU=",
+  "Source": "LibraryManagementSystemBackend",
+  "BasePath": "_content/LibraryManagementSystemBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibraryManagementSystemBackend\\wwwroot",
+      "Source": "LibraryManagementSystemBackend",
+      "ContentRoot": "E:\\BACKUP\\Desktop\\MIHIKA\\Library-Management-System\\LibraryManagementSystemBackend\\wwwroot\\",
+      "BasePath": "_content/LibraryManagementSystemBackend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

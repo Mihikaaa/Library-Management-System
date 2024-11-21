@@ -1,0 +1,175 @@
+/* Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f4f0;
+  padding: 20px; /* Add padding to prevent elements from touching screen edges */
+}
+
+/* Wrapper */
+.login-wrapper {
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Ensure a maximum width for larger screens */
+}
+
+/* Login Box */
+.login-box {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.login-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../assets/book-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px; /* Resize the background icon */
+  opacity: 0.05;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Login Logo */
+.login-logo img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Login Box Content */
+.login-box h2 {
+  font-size: 24px;
+  color: #d6a675;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left; /* Align labels to the left */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.error-message,
+.success-message {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: left;
+  color: red; /* Default error message color */
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #d6a675;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #bf8b56;
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.register-link span {
+  color: #d6a675;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-box {
+      padding: 15px;
+  }
+
+  .login-logo img {
+      width: 120px; /* Shrink logo size for tablets */
+  }
+
+  .login-box h2 {
+      font-size: 20px;
+  }
+
+  .form-group label {
+      font-size: 13px;
+  }
+
+  .form-group input {
+      font-size: 13px;
+      padding: 8px;
+  }
+
+  .login-btn {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-wrapper {
+      padding: 10px; /* Add padding to prevent layout from touching screen edges */
+  }
+
+  .login-logo img {
+      width: 100px; /* Further reduce logo size for mobile phones */
+  }
+
+  .login-box h2 {
+      font-size: 18px;
+  }
+
+  .form-group label {
+      font-size: 12px;
+  }
+
+  .form-group input {
+      font-size: 12px;
+      padding: 6px;
+  }
+
+  .login-btn {
+      font-size: 12px;
+      padding: 6px;
+  }
+
+  .register-link {
+      font-size: 12px;
+  }
+}
